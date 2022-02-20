@@ -1,0 +1,48 @@
+.sign-up-img{
+  /* background-color: #00B4D8; */
+    height: 600px!important;
+}
+label{
+   
+    margin-top: 10px!important;
+
+}
+.form-control{
+    border:none!important;
+    box-shadow: none!important;
+    border-bottom: 1px solid silver!important;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+}
+form{
+    
+}
+.form-group{
+    background-color:black;
+    opacity:0.8!important; 
+    color: #fff;
+    height: 650px !important;
+  
+}
+.form-group label{ float:left; margin-left:2%!important;width:400px!important  }
+.form-group input {background:transparent ; margin-left:2%!important;width:400px!important}
+.submit-btn{
+    background-color:darkslategray!important;
+    color: #ffff!important;
+    float: center!important;
+    width: 200px !important;
+    /* margin-left:2%!important */
+}
+.container{
+   
+/* background-color: #00B4D8; */
+    /* background-color: #193498; */
+    /* color: #fff; */
+}
+.sign-up{
+    background-image: url("C:\Users\92342\Downloads\pexels-pixabay-62627.jpg");
+    /* background-color: #00B4D8; */
+}
+h1{
+    float: left!important;
+}
