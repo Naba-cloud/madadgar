@@ -1,10 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Signup.css"
 import img from "../Assets/SignupAssets/signup-header.svg"
+import useStore  from "../Zustand/store";
 const Signup=()=>{
+ const userName=useStore(state=>state.userName)
+ const getusername=useStore(state=>state.getusername)
+console.log(userName);
 return (<div className="sign-up">
 
-<div className="container ">
+<div className="container">
  <div className="row">
  
 <div className="col-lg-12 sign-up-form pt-5 pb-5 w-50 mx-auto text-center mt-5"> 
@@ -18,7 +22,22 @@ return (<div className="sign-up">
 <div class="mb-3 w-75 mx-auto text-center ">
 
     <label>UserName</label>
-    <input type="text" className="form-control " id="exampleInputPassword1"/>
+    <input value={userName} onChange={getusername}type="text" className="form-control " id="exampleInputPassword1"/>
+</div>
+
+<div class="mb-3 w-75 mx-auto text-center ">
+<label>Select Your Category</label>
+    <select className="categories">
+      <option>
+        Donator
+      </option>
+      <option>
+        Needy
+      </option>
+      <option>
+        Organization
+      </option>
+    </select>
 </div>
 
   <div class="mb-3 w-75 mx-auto text-center">
@@ -28,11 +47,11 @@ return (<div className="sign-up">
   </div>
   <div class="mb-3 w-75 mx-auto text-center">
     <label >PhoneNumber</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"/>
+    <input type="number" className="form-control" id="exampleInputPassword1"/>
   </div>
   <div class="mb-3 w-75 mx-auto text-center">
     <label >Cnic</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"/>
+    <input type="text" className="form-control" id="exampleInputPassword1"/>
   </div>
   <div class="mb-3 w-75 mx-auto text-center">
     <label >Password</label>
@@ -46,7 +65,8 @@ return (<div className="sign-up">
   </div>
   <div class="mb-3 w-75 mx-auto text-center">
   <button className="btn submit-btn mx-auto text-center">Register</button>
-  
+  <br/>
+  <p className="mt-2 pt-3">Already Have An Account lets? <a href="">Login</a></p>
   </div>
  
   

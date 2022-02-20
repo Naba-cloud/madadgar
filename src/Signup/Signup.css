@@ -21,11 +21,11 @@ form{
     background-color:black;
     opacity:0.8!important; 
     color: #fff;
-    height: 650px !important;
-  
+    height: 780px !important;
+    width: 500px,!important;
 }
 .form-group label{ float:left; margin-left:2%!important;width:400px!important  }
-.form-group input {background:transparent ; margin-left:2%!important;width:400px!important}
+.form-group input {background:transparent ; margin-left:2%!important;width:400px!important;color:silver!important}
 .submit-btn{
     background-color:darkslategray!important;
     color: #ffff!important;
@@ -45,4 +45,14 @@ form{
 }
 h1{
     float: left!important;
+}
+.categories{
+    border-top:none!important;
+    border-left:none!important;
+    border-right:none!important;
+    box-shadow: none!important;
+    outline: none!important;
+    background: transparent!important;
+    border-bottom: 1px solid white;
+    width: 400px !important;
 }

@@ -9,8 +9,8 @@ function App() {
   const loggedIn=useSelector(selectUser)
   return (
     <div className="App">
-      {loggedIn?<Logout/> :<Login/>}
-     {/* <Signup/> */}
+      {/* {loggedIn?<Logout/> :<Login/>} */}
+     <Signup/>
      {/* <Login/> */}
     </div>
   );
